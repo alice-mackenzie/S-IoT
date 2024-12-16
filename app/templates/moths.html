@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moths Data</title>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script src="{{ url_for('static', filename='moth_charts.js') }}"></script>
+</head>
+<body>
+    <div class="moths-container">
+        <h2>Moths Data</h2>
+        <div class="data-grid">
+            <div class="data-card">
+                <h3>Recent Observations</h3>
+                <p>Moths detection data will be displayed here</p>
+            </div>
+            <div class="data-card">
+                <h3>Activity Patterns</h3>
+                <div class="chart-container">
+                    <canvas id="mothsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

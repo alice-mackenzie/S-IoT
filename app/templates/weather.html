@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Required JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+    <script src="{{ url_for('static', filename='weather_charts.js') }}"></script>
+</head>
+<body>
+    <div class="weather-container">
+        <h2>Weather Data</h2>
+
+        <!-- Chart container added here, before the data cards -->
+        <div class="chart-container" style="position: relative; height:400px; margin-bottom: 30px;">
+            <canvas id="weatherChart"></canvas>
+            <!-- Metric toggles will be automatically added here by JavaScript -->
+        </div>
+
+        <div class="data-grid">
+            <div class="data-card">
+                <h3>Current Conditions</h3>
+                <p>Temperature, humidity, and other metrics will be displayed here</p>
+            </div>
+            <div class="data-card">
+                <h3>Moon and Light Data</h3>
+                <p>Moon phase and light measurements will be shown here</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

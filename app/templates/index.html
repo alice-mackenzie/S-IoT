@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mothi - Collect and Understand</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Load Plotly first as both charts depend on it -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.1/plotly.min.js"></script>
+    <!-- Load chart modules before main script -->
+    <script src="{{ url_for('static', filename='weather_charts.js') }}"></script>
+    <script src="{{ url_for('static', filename='weather_metrics.js') }}"></script>
+    <script src="{{ url_for('static', filename='moth_charts.js') }}"></script>
+    <script src="{{ url_for('static', filename='last_night_moths.js') }}"></script>
+    <script src="{{ url_for('static', filename='departure_charts.js') }}"></script>
+    <!-- Load main script last -->
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mothi - Collect and Understand</h1>
+        </header>
+
+        <!-- Add light controls here, right after the header -->
+        <div class="light-controls">
+            <button id="warmLightBtn" class="light-btn">Warm Light</button>
+            <button id="turnOffLightBtn" class="light-btn">Turn Off</button>
+        </div>
+
+        <section id="weather" class="section">
+            <h2>Weather Data</h2>
+            <div class="data-container">
+                <div id="currentWeather"></div>
+                <div class="chart-container" style="width:100%; height:500px; border:1px solid #ccc;">
+                    <div id="weatherChart" style="width:100%; height:100%;"></div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="moths" class="section">
+            <h2>Moths</h2>
+            <div class="data-container">
+                <div class="chart-container">
+                    <div id="mothsChart"></div>
+                </div>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h3>Last Night's Moths</h3>
+                        <div id="mothActivity"></div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section id="departures" class="section">
+            <h2>Departure Analysis</h2>
+            <div class="data-container">
+                <div class="chart-container">
+                    <div id="departureChart"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
+
