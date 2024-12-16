@@ -5,23 +5,23 @@ Please move the collect_weather_data.py file into the collecting_data directory 
 # System Overview
 This project consists of several interconnected components:
 
-Automated moth attraction using LED arrays
-Image capture and computer vision-based moth detection
-Environmental data collection (temperature, humidity, light)
-Solar/lunar phase tracking
-Web-based visualization dashboard
+- Automated moth attraction using LED arrays
+- Image capture and computer vision-based moth detection
+- Environmental data collection (temperature, humidity, light)
+- Solar/lunar phase tracking
+- Web-based visualization dashboard
 
 # Hardware Requirements
 
-Raspberry Pi 2 W Zero
-Camera module compatible with Raspberry Pi, Pi Camera Module 3 NoIR is reccomended
-NeoPixel LED rings:
-24-LED ring (Ring 1)
-16-LED ring (Ring 2)
+- Raspberry Pi 2 W Zero
+- Camera module compatible with Raspberry Pi, Pi Camera Module 3 NoIR is reccomended
+- NeoPixel LED rings:
+-- 24-LED ring (Ring 1)
+-- 16-LED ring (Ring 2)
 
-DHT11 Temperature & Humidity Sensor
-TCS34725 RGB & Lux Sensor
-Appropriate power supply for LED rings
+- DHT11 Temperature & Humidity Sensor
+- TCS34725 RGB & Lux Sensor
+- Appropriate power supply for LED rings
 
 
 # System dependencies
