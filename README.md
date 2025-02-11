@@ -77,7 +77,6 @@ Transition to red light to observe departures
 Continued image capture and analysis
 
 # Web Dashboard
-Access the dashboard at http://localhost:5000:
 
 This shows: 
 - Real-time environmental conditions
